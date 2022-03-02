@@ -1,0 +1,142 @@
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 8rem;
+
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    .dark {
+      margin-left: 6.4rem;
+      font-size: 2.4rem;
+
+      color: $vermelho-5;
+
+      cursor: pointer;
+    }
+
+    .close,
+    .active {
+      display: none;
+
+      font-size: 2.4rem;
+
+      cursor: pointer;
+    }
+
+    .close {
+      position: absolute;
+      top: 2rem;
+      right: 2.5rem;
+    }
+
+    .header__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+
+      li {
+        padding: 0.8rem;
+
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 3px;
+
+          background-color: $vermelho-5;
+
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0.5rem;
+
+          transition: width 0.4s;
+        }
+
+        &:hover::after {
+          width: 92%;
+        }
+
+        a {
+          font-family: $poppins;
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: $c10;
+
+          transition: color 0.4s;
+
+          &:hover {
+            color: $vermelho-5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  #header .container {
+    .header__menu {
+      .active {
+        display: block;
+
+        margin-right: 3.2rem;
+      }
+
+      .close {
+        display: none;
+      }
+
+      .dark {
+        margin: 0;
+      }
+
+      .header__items {
+        display: none;
+      }
+    }
+
+    .header__menu.show {
+      width: 100vw;
+      height: 100vh;
+
+      background-color: $c1;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      place-content: center;
+
+      .close {
+        display: block;
+      }
+
+      .active,
+      .dark {
+        display: none;
+      }
+
+      .header__items {
+        display: block;
+
+        li {
+          text-align: center;
+
+          a {
+            font-size: 2.4rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
