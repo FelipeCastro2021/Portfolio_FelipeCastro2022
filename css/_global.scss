@@ -32,9 +32,98 @@ ul {
 img {
   display: block;
   max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 .container {
-  width: Min(120rem, 95vw);
+  width: Min(120rem, 90vw);
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.section {
+  padding: 7.8rem;
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $c10;
+
+  text-align: center;
+
+  background-color: $vermelho-5;
+
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: white;
+    border-color: transparent;
+    color: $vermelho-5;
+  }
+}
+
+.btn.outlined {
+  border: 0.2rem solid $vermelho-5;
+
+  background-color: transparent;
+
+  color: $vermelho-5;
+
+  transition: background 0.4s;
+
+  &:hover {
+    background-color: white;
+    border-color: transparent;
+    color: $vermelho-5;
+  }
+}
+
+.mark strong {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 145%;
+  color: $vermelho-5;
+  margin-left: 3.7rem;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 3rem;
+    height: 0.2rem;
+
+    background-color: $vermelho-5;
+
+    position: absolute;
+    top: 1rem;
+    left: -3.7rem;
+  }
+}
+
+@media screen and (max-width: 76.8rem) {
+  .mark strong {
+    font-size: 1.4rem;
+
+    &::before {
+      top: 0.8rem;
+    }
+  }
+}
+
+.title {
+  font-size: 14.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4.2ch;
+
+  color: $c2;
 }

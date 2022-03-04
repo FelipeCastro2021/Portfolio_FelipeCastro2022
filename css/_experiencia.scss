@@ -1,0 +1,245 @@
+#experiencia .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .experiencia__text p {
+    max-width: 50ch;
+  }
+
+  .experiencia__curriculums {
+    display: grid;
+    gap: 3.2rem;
+  }
+
+  .experiencia__curriculum {
+    display: flex;
+    gap: 1.6rem;
+
+    .experiencia__block {
+      min-width: 21rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 2.1rem;
+        height: 2.8rem;
+
+        background-color: $vermelho-5;
+
+        position: absolute;
+        top: -0.89rem;
+        right: -1.2rem;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotate(71deg);
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-align: center;
+
+        padding: 1.2rem 2.4rem;
+        border-radius: 0.2rem;
+
+        background-color: $vermelho-5;
+      }
+
+      strong {
+        background-color: $c10;
+
+        text-transform: capitalize;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: $c1;
+        line-height: 1.5;
+        text-align: center;
+
+        display: inline-block;
+
+        padding: 1.2rem 2.4rem;
+        width: 100%;
+      }
+    }
+
+    .experiencia__description {
+      display: grid;
+      gap: 1.6rem;
+
+      background-color: $vermelho-5;
+
+      padding: 1.6rem 1.3rem;
+      border-radius: 0.5rem;
+
+      h3 {
+        text-transform: uppercase;
+        font-family: $poppins;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.1;
+
+        color: $c10;
+      }
+
+      p {
+        margin: 0;
+
+        color: $c10;
+        font-size: 1.4rem;
+      }
+
+      .experiencia__knowledge {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+
+        li {
+          font-weight: 600;
+          font-size: 1.4rem;
+          line-height: 1.5;
+
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+
+          color: $vermelho-5;
+          background-color: $c1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .title {
+    max-width: 100%;
+    font-size: 9.6rem;
+  }
+
+  #experiencia .container {
+    grid-template-columns: 1fr;
+
+    .experiencia__text {
+      margin-bottom: 6.4rem;
+
+      p {
+        max-width: 75ch;
+      }
+    }
+
+    .experiencia__curriculum {
+      gap: 3.2rem;
+
+      .experiencia__block {
+        width: 25rem;
+
+        h3 {
+          font-size: 1.4rem;
+
+          padding: 1rem 2rem;
+        }
+
+        strong {
+          font-size: 1.4rem;
+
+          padding: 1rem 2rem;
+        }
+      }
+
+      .experiencia__description {
+        width: Min(100%, 50rem);
+
+        background-color: $vermelho-5;
+
+        padding: 1.6rem 1.3rem;
+        border-radius: 0.5rem;
+
+        h3 {
+          text-transform: uppercase;
+          font-family: $poppins;
+          font-weight: bold;
+          font-size: 2.4rem;
+          line-height: 1.1;
+
+          color: $c10;
+        }
+
+        p {
+          margin: 0;
+
+          color: $c10;
+          font-size: 1.4rem;
+        }
+
+        .experiencia__knowledge {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.6rem;
+
+          li {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.5;
+
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+
+            color: $vermelho-5;
+            background-color: $c1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #experiencia .container {
+    .experiencia__text .title {
+      font-size: 5.6rem;
+    }
+
+    .experiencia__curriculum {
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .experiencia__block {
+        width: Min(28rem, 100%);
+
+        h3 {
+          font-size: 1.2rem;
+
+          padding: 0.8rem 1.5rem;
+        }
+
+        strong {
+          font-size: 1.2rem;
+
+          padding: 0.8rem 1.5rem;
+        }
+      }
+
+      .experiencia__description {
+        padding: 2.5rem 1rem;
+
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        .experiencia__knowledge {
+          li {
+            font-size: 1.2rem;
+            line-height: 1.35;
+
+            padding: 0.3rem 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
