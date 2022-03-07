@@ -1,3 +1,11 @@
+p {
+  margin: 3.2rem 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
+
+  color: $c7;
+}
+
 #sobre .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,14 +30,6 @@
       font-size: 2.4rem;
 
       color: $c6;
-    }
-
-    p {
-      margin: 3.2rem 0;
-      font-size: 1.8rem;
-      line-height: 1.5;
-
-      color: $c7;
     }
 
     .buttons {
@@ -59,6 +59,11 @@
 }
 
 @media screen and (max-width: 100rem) {
+  p {
+    margin: 1.6rem 0;
+    font-size: 1.4rem;
+  }
+
   #sobre .container {
     grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
@@ -70,11 +75,6 @@
 
       h2 {
         font-size: 1.8rem;
-      }
-
-      p {
-        margin: 1.6rem 0;
-        font-size: 1.4rem;
       }
 
       .buttons {
@@ -90,6 +90,10 @@
 }
 
 @media screen and (max-width: 76.8rem) {
+  p {
+    font-size: 1.2rem;
+  }
+
   #sobre .container {
     grid-template-columns: 1fr 1fr;
 
@@ -100,10 +104,6 @@
 
       h2 {
         font-size: 1.4rem;
-      }
-
-      p {
-        font-size: 1.2rem;
       }
 
       .buttons {

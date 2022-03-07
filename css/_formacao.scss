@@ -5,21 +5,23 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    gap: 2rem 8rem;
+    align-content: flex-start;
 
-    .mark strong {
-      color: $c1;
+    .mark {
       grid-column: 1 / -1;
 
-      &::before {
-        background-color: $c1;
+      strong {
+        color: $c1;
+
+        &::before {
+          background-color: $c1;
+        }
       }
     }
 
     .formacao-informations {
       .formacao-lista {
-        margin-top: 6.4rem;
-
         display: flex;
         flex-wrap: wrap;
         gap: 4.8rem;
@@ -119,6 +121,10 @@
     .container {
       grid-template-columns: 1fr;
       gap: 5rem;
+
+      .title {
+        max-width: 100%;
+      }
 
       .formacao-informations {
         order: 1;
