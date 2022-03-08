@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -21,7 +21,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #121212;
   color: #fafafa;
 }
@@ -34,13 +34,13 @@ img {
   display: block;
   max-width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 .container {
-  width: Min(120rem, 90vw);
+  width: Min(120rem, 85vw);
   max-width: 100%;
   margin: 0 auto;
 }
@@ -82,7 +82,7 @@ img {
 }
 
 .mark strong {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -121,16 +121,68 @@ img {
   color: #262626;
 }
 
+body > .container {
+  position: relative;
+}
+
+.socials {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  z-index: 3;
+}
+
+.socials div {
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #121212;
+  background-color: #262626;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.socials div:hover {
+  background-color: #f8614a;
+  --vermelho-5: #fafafa;
+}
+
+@media screen and (max-width: 968px) {
+  .socials {
+    margin-top: 3.2rem;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+  }
+  .socials div {
+    width: 100%;
+  }
+}
+
 #header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 8rem;
 }
 
@@ -139,11 +191,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0;
 }
 
@@ -172,7 +224,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.2rem;
 }
 
@@ -198,9 +250,8 @@ img {
 }
 
 #header .container .header__menu .header__items li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
   line-height: 150%;
   color: #fafafa;
   -webkit-transition: color 0.4s;
@@ -264,11 +315,11 @@ p {
 #sobre .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10rem;
 }
 
@@ -283,7 +334,7 @@ p {
 }
 
 #sobre .container .sobre__content h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   color: #999999;
@@ -295,8 +346,8 @@ p {
   display: flex;
   gap: 3.2rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #sobre .container .content__image {
@@ -321,7 +372,7 @@ p {
   }
   #sobre .container {
     -ms-grid-columns: 1.5fr 1fr;
-    grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
   }
   #sobre .container .sobre__content h1 {
@@ -345,7 +396,7 @@ p {
   }
   #sobre .container {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   #sobre .container .sobre__content h1 {
     font-size: 3.2rem;
@@ -365,7 +416,7 @@ p {
 @media screen and (max-width: 60rem) {
   #sobre .container {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #sobre .container .sobre__content h1 {
     font-size: 3.2rem;
@@ -382,7 +433,7 @@ p {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 #experiencia .container .experiencia__text p {
@@ -416,14 +467,14 @@ p {
   top: -0.89rem;
   right: -1.2rem;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   -webkit-transform: rotate(71deg);
-  transform: rotate(71deg);
+          transform: rotate(71deg);
 }
 
 #experiencia .container .experiencia__curriculum .experiencia__block h3 {
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   text-align: center;
@@ -435,7 +486,7 @@ p {
 #experiencia .container .experiencia__curriculum .experiencia__block strong {
   background-color: #fafafa;
   text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: #121212;
@@ -458,7 +509,7 @@ p {
 
 #experiencia .container .experiencia__curriculum .experiencia__description h3 {
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 1.1;
@@ -471,25 +522,16 @@ p {
   font-size: 1.4rem;
 }
 
-#experiencia
-  .container
-  .experiencia__curriculum
-  .experiencia__description
-  .experiencia__knowledge {
+#experiencia .container .experiencia__curriculum .experiencia__description .experiencia__knowledge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 0.6rem;
 }
 
-#experiencia
-  .container
-  .experiencia__curriculum
-  .experiencia__description
-  .experiencia__knowledge
-  li {
+#experiencia .container .experiencia__curriculum .experiencia__description .experiencia__knowledge li {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -506,7 +548,7 @@ p {
   }
   #experiencia .container {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #experiencia .container .experiencia__text {
     margin-bottom: 6.4rem;
@@ -534,13 +576,9 @@ p {
     padding: 1.6rem 1.3rem;
     border-radius: 0.5rem;
   }
-  #experiencia
-    .container
-    .experiencia__curriculum
-    .experiencia__description
-    h3 {
+  #experiencia .container .experiencia__curriculum .experiencia__description h3 {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 1.1;
@@ -551,24 +589,15 @@ p {
     color: #fafafa;
     font-size: 1.4rem;
   }
-  #experiencia
-    .container
-    .experiencia__curriculum
-    .experiencia__description
-    .experiencia__knowledge {
+  #experiencia .container .experiencia__curriculum .experiencia__description .experiencia__knowledge {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 0.6rem;
   }
-  #experiencia
-    .container
-    .experiencia__curriculum
-    .experiencia__description
-    .experiencia__knowledge
-    li {
+  #experiencia .container .experiencia__curriculum .experiencia__description .experiencia__knowledge li {
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -585,7 +614,7 @@ p {
   }
   #experiencia .container .experiencia__curriculum {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 1rem;
   }
   #experiencia .container .experiencia__curriculum .experiencia__block {
@@ -602,22 +631,13 @@ p {
   #experiencia .container .experiencia__curriculum .experiencia__description {
     padding: 2.5rem 1rem;
   }
-  #experiencia
-    .container
-    .experiencia__curriculum
-    .experiencia__description
-    h3 {
+  #experiencia .container .experiencia__curriculum .experiencia__description h3 {
     font-size: 1.8rem;
   }
   #experiencia .container .experiencia__curriculum .experiencia__description p {
     font-size: 1.2rem;
   }
-  #experiencia
-    .container
-    .experiencia__curriculum
-    .experiencia__description
-    .experiencia__knowledge
-    li {
+  #experiencia .container .experiencia__curriculum .experiencia__description .experiencia__knowledge li {
     font-size: 1.2rem;
     line-height: 1.35;
     padding: 0.3rem 0.6rem;
@@ -633,10 +653,10 @@ p {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 2rem 8rem;
   -ms-flex-line-pack: start;
-  align-content: flex-start;
+      align-content: flex-start;
 }
 
 #formacao .container .mark {
@@ -656,15 +676,15 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 4.8rem;
 }
 
 #formacao .container .formacao-informations .formacao-lista li {
   background-color: #e73e33;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 22rem;
-  flex: 1 1 22rem;
+      -ms-flex: 1 1 22rem;
+          flex: 1 1 22rem;
   padding: 1.6rem;
   border-radius: 0.5rem;
   border: 0.1rem solid #bb291f;
@@ -673,8 +693,8 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #formacao .container .formacao-informations .formacao-lista li span {
@@ -692,8 +712,8 @@ p {
   color: #a50f0f;
   margin: 0.3rem 0 6.4rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #formacao .container .formacao-informations .formacao-extras {
@@ -709,8 +729,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.5rem;
 }
 
@@ -755,7 +775,7 @@ p {
 @media screen and (max-width: 968px) {
   #formacao .container {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 5rem;
   }
   #formacao .container .title {
@@ -763,13 +783,13 @@ p {
   }
   #formacao .container .formacao-informations {
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   #formacao .container .formacao-introduction {
     -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
@@ -777,16 +797,16 @@ p {
   .formacao-extras {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .formacao-extras ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .formacao-extras ul li span {
     color: #bb291f;
@@ -802,10 +822,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 2rem;
 }
 
@@ -816,17 +836,17 @@ p {
 #footer .container a {
   font-size: 1.8rem;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 968px) {
   #footer .container {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
