@@ -57,12 +57,12 @@ img {
 
   text-align: center;
 
-  background-color: $vermelho-5;
+  background: linear-gradient(to bottom, #e73e33 0%, #ba281e 100%);
 
   transition: all 0.4s;
 
   &:hover {
-    background-color: white;
+    background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%);
     border-color: transparent;
     color: $vermelho-5;
   }
@@ -71,16 +71,15 @@ img {
 .btn.outlined {
   border: 0.2rem solid $vermelho-5;
 
-  background-color: transparent;
+  background: none;
 
   color: $vermelho-5;
 
   transition: background 0.4s;
 
   &:hover {
-    background-color: white;
-    border-color: transparent;
-    color: $vermelho-5;
+    border-color: #fff;
+    color: #fff;
   }
 }
 

@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
 
     img {
@@ -15,6 +16,7 @@
       font-size: 1.8rem;
       color: white;
       font-family: $poppins;
+      font-weight: 600;
     }
   }
 }

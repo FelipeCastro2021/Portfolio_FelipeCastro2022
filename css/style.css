@@ -56,29 +56,30 @@ img {
   font-weight: bold;
   color: #fafafa;
   text-align: center;
-  background-color: #f8614a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e73e33), to(#ba281e));
+  background: linear-gradient(to bottom, #e73e33 0%, #ba281e 100%);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .btn:hover {
-  background-color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+  background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%);
   border-color: transparent;
   color: #f8614a;
 }
 
 .btn.outlined {
   border: 0.2rem solid #f8614a;
-  background-color: transparent;
+  background: none;
   color: #f8614a;
   -webkit-transition: background 0.4s;
   transition: background 0.4s;
 }
 
 .btn.outlined:hover {
-  background-color: white;
-  border-color: transparent;
-  color: #f8614a;
+  border-color: #fff;
+  color: #fff;
 }
 
 .mark strong {
@@ -254,6 +255,7 @@ body > .container {
   font-weight: 600;
   line-height: 150%;
   color: #fafafa;
+  font-size: 24px;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
@@ -363,6 +365,10 @@ p {
   top: 15.66%;
   left: 11.36%;
   z-index: -1;
+}
+
+#sobre .container .content__image img {
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 100rem) {
@@ -476,11 +482,11 @@ p {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 1.2rem 2.4rem;
   border-radius: 0.2rem;
-  background-color: #f8614a;
+  background-color: #fe6767;
 }
 
 #experiencia .container .experiencia__curriculum .experiencia__block strong {
@@ -502,7 +508,7 @@ p {
   display: -ms-grid;
   display: grid;
   gap: 1.6rem;
-  background-color: #f8614a;
+  background-color: #fe6767;
   padding: 1.6rem 1.3rem;
   border-radius: 0.5rem;
 }
@@ -512,7 +518,8 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
-  line-height: 1.1;
+  line-height: 1.2;
+  text-align: center;
   color: #fafafa;
 }
 
@@ -642,6 +649,52 @@ p {
     line-height: 1.35;
     padding: 0.3rem 0.6rem;
   }
+}
+
+#habilidades {
+  background-color: #121212;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 0 8rem;
+}
+
+#habilidades .habilidade-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(68%, #e73e33), color-stop(68%, #262626));
+  background: linear-gradient(to bottom, #e73e33 68%, #262626 68%);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+#habilidades .habilidade-circle::before {
+  content: '68%';
+  display: inline-block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  background: #121212 content-box;
+  padding: 2rem;
+  line-height: 14rem;
+}
+
+#habilidades .habilidade-circle::before, #habilidades .habilidade-circle::after {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #formacao {
@@ -826,6 +879,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
 }
 
@@ -837,6 +893,7 @@ p {
   font-size: 1.8rem;
   color: white;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 968px) {
