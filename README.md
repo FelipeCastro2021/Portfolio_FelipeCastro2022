@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto Habits" src="assets/preview.jpg" width="100%">
+  <img alt="projeto Habits" src="assets/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,9 +26,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Habits é um app para ajudar a rastrear os hábitos.
+Esse portfólio visa mostrar meu desenvolvimento e experiência no desenvolvimento web.
 
-- [Visite o projeto online](https://FelipeCastro2021.github.io/NLWSetup-Explorer)
+- [Visite o projeto online](https://FelipeCastro2021.github.io/Portfolio_FelipeCastro2022)
 
 ## 🔖 Layout
 
