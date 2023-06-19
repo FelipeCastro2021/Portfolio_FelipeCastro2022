@@ -1,18 +1,21 @@
 #habilidades {
   background-color: $c1;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  gap: 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 4rem;
+
+  position: relative;
 }
 
 #habilidades .habilidade-circle {
   display: flex;
   flex-direction: column;
 
-  background: linear-gradient(to bottom, $vermelho-4 68%, $c2 68%);
-
-  transform: rotate(0deg);
+  background: linear-gradient(to right, transparent 50%, var(--clr) 0);
+  color: #fff;
 
   width: 20rem;
   height: 20rem;
@@ -20,25 +23,69 @@
 
   position: relative;
 
-  &::before {
-    content: '68%';
-    display: inline-block;
-    transform: rotate(-0deg);
+  h3 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
 
-    font-size: 2.4rem;
-    font-weight: bold;
-    font-family: $poppins;
+    transform: translate(-50%, -50%);
 
-    background: $c1 content-box;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 
-    padding: 2rem;
-    line-height: 14rem;
+    z-index: 1;
+
+    span {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
   }
 
-  &::before,
-  &::after {
+  h4 {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    z-index: 1;
+
+    color: var(--clr);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+
+    margin-left: 50%;
+    transform-origin: left;
+
+    border-radius: 0 100% 100% 0/50%;
+
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+
+    background-color: $c1;
+  }
+
+  /* If value is less than 50%, then */
+  &.less::before {
+    background: $c1;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+
+    border: 1px solid $c1;
   }
 }
