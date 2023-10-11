@@ -1,43 +1,56 @@
-<h1 align="center"> Portfólio </h1>
+<h1 align="center"> Portfolio - Felipe Castro Ferreira </h1>
 
 <p align="center">
- Meu portfólio como Desenvolvedor Front End Júnior, minhas experiências, minhas conquistas e meus aprendizados apresentados numa Landing Page <br/>
+ My portfolio as a Junior Front End Developer, my experiences, my achievements and my learnings presented on a Landing Page <br/>
 </p>
 
+> Status: Developing
+
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">`Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <!-- <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">License</a>
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="projeto Habits" src="preview.png" width="100%">
+  <img alt="Portfolio" src="preview.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## 🚀 Technologies
+This project was developed with the following technologies:
 
 - HTML e CSS
 - Git e GitHub
 - Figma
 
-## 💻 Projeto
+## 💻 Project
 
-Esse portfólio visa mostrar meu desenvolvimento e experiência no desenvolvimento web.
+This portfolio aims to showcase my development and experience in web development.
 
-- [Visite o projeto online](https://FelipeCastro2021.github.io/Portfolio_FelipeCastro2022)
+- [Visit the project online](https://FelipeCastro2021.github.io/Portfolio_FelipeCastro2022)
+
+<!--
+## 🪨 Features
+
++ Return to top of page
++ See the more recently movement created, using Cookie 
++ Entire verification system to validate forms with personalized messages. 
++ Message Of success create a movement, using Session Flash.
+
+-->
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/f8HTnQ6w78FNMIYLZtiOLV/Portf%C3%B3lio?node-id=7%3A3&t=7NTqocUjp70egM2N-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can view the project layout through [THIS LINK](https://www.figma.com/file/f8HTnQ6w78FNMIYLZtiOLV/Portf%C3%B3lio?node-id=7%3A3&t=7NTqocUjp70egM2N-0). You must have an account on [Figma](https://figma.com) to access it.
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT.
+This project is under the MIT license.
 
 ---
 
-Feito by FelipeCastro in 2022
+Made by Felipe Castro in 2022
